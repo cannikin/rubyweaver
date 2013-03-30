@@ -1,0 +1,361 @@
+<codehints xmlns:MMString="http://www.macromedia.com/schemes/data/string/">
+
+<menugroup name="Rails Functions" id="CodeHints_Rails_Function_Arguments" enabled="true">
+	<description>
+		<![CDATA[Ruby on Rails functions]]>
+	</description>
+
+	<!--ActionView::Helpers::ActiveRecordHelper-->
+	<function pattern="error_message_on(object, method, prepend_text = &quot;&quot;, append_text = &quot;&quot;, css_class = &quot;formError&quot;)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="error_messages_for(object_name, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="form(record_name, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="input(record_name, method)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::AssetTagHelper-->
+	<function pattern="auto_discovery_link_tag(type = :rss, options = {}, tag_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="image_path(source)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="image_tag(source, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="javascript_include_tag(*sources)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="javascript_path(source)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="stylesheet_link_tag(*sources)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="stylesheet_path(source)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::DateHelper-->
+	<function pattern="date_select(object, method, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="datetime_select(object, method, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="distance_of_time_in_words(from_time, to_time = 0, include_seconds = false)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="distance_of_time_in_words_to_now(from_time, include_seconds = false)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_date(date = Date.today, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_datetime(datetime = Time.now, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_day(date, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_hour(datetime, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_minute(datetime, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_month(date, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_second(datetime, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_time(datetime = Time.now, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_year(date, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="time_ago_in_words(from_time, include_seconds = false)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::DebugHelper-->
+	<function pattern="debug(object)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::FormHelper-->
+	<function pattern="check_box(object, method, options = {}, checked_value = "1", unchecked_value = "0")" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="file_field(object, method, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="hidden_field(object, method, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="password_field(object, method, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="radio_button(object, method, tag_value, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="text_area(object, method, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="text_field(object, method, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::FormOptionsHelper-->
+	<function pattern="collection_select(object, method, collection, value_method, text_method, options = {}, html_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="country_options_for_select(selected = nil, priority_countries = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="country_select(object, method, priority_countries = nil, options = {}, html_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="option_groups_from_collection_for_select(collection, group_method, group_label_method, option_key_method, option_value_method, selected_key = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="options_for_select(container, selected = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="options_from_collection_for_select(collection, value_method, text_method, selected_value = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select(object, method, choices, options = {}, html_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="time_zone_options_for_select(selected = nil, priority_zones = nil, model = TimeZone)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="time_zone_select(object, method, priority_zones = nil, options = {}, html_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::FormTagHelper-->
+	<function pattern="check_box_tag(name, value = "1", checked = false, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="end_form_tag()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="file_field_tag(name, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="form_tag(url_for_options = {}, options = {}, *parameters_for_url)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="hidden_field_tag(name, value = nil, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="image_submit_tag(source, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="password_field_tag(name = "password", value = nil, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="radio_button_tag(name, value, checked = false, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="select_tag(name, option_tags = nil, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="start_form_tag(url_for_options = {}, options = {}, *parameters_for_url)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="submit_tag(value = "Save changes", options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="text_area_tag(name, content = nil, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="text_field_tag(name, value = nil, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::JavaScriptHelper-->
+	<function pattern="auto_complete_field(field_id, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="auto_complete_result(entries, field, phrase = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="define_javascript_functions()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="draggable_element(element_id, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="drop_receiving_element(element_id, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="escape_javascript(javascript)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="evaluate_remote_response()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="form_remote_tag(options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="javascript_tag(content)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="link_to_function(name, function, html_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="link_to_remote(name, options = {}, html_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="observe_field(field_id, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="observe_form(form_id, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="periodically_call_remote(options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="sortable_element(element_id, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="submit_to_remote(name, value, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="text_field_with_auto_complete(object, method, tag_options = {}, completion_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="update_element_function(element_id, options = {}, &block)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="visual_effect(name, element_id = false, js_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::NumberHelper-->
+	<function pattern="human_size(size)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="number_to_currency(number, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="number_to_human_size(size)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="number_to_percentage(number, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="number_to_phone(number, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="number_with_delimiter(number, delimiter=",")" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="number_with_precision(number, precision=3)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::PaginationHelper-->
+	<function pattern="pagination_links(paginator, options={})" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::TagHelper-->
+	<function pattern="content_tag(name, content, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="tag(name, options = {}, open = false)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::TextHelper-->
+	<function pattern="auto_link(text, link = :all, href_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="concat(string, binding)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="excerpt(text, phrase, radius = 100, excerpt_string = "...")" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="highlight(text, phrase, highlighter = '<strong class="highlight">\1</strong>')" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="markdown(text)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="pluralize(count, singular, plural = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="sanitize(html)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="simple_format(text)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="strip_links(text)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="textilize(text)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="textilize_without_paragraph(text)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="truncate(text, length = 30, truncate_string = "...")" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="word_wrap(text, line_width = 80)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!--ActionView::Helpers::UrlHelper-->
+	<function pattern="button_to(name, options = {}, html_options = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="current_page?(options)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="link_image_to(src, options = {}, html_options = {}, *parameters_for_method_reference)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="link_to(name, options = {}, html_options = nil, *parameters_for_method_reference)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="link_to &apos;name&apos;, options = {}, html_options = nil, *parameters_for_method_reference" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="link_to_if(condition, name, options = {}, html_options = {}, *parameters_for_method_reference, &block)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="link_to_image(src, options = {}, html_options = {}, *parameters_for_method_reference)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="link_to_unless(condition, name, options = {}, html_options = {}, *parameters_for_method_reference)" doctypes="Ruby,Rails" caseSensitive="false" /> {|name| ...}
+	<function pattern="link_to_unless_current(name, options = {}, html_options = {}, *parameters_for_method_reference, &block)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="mail_to(email_address, name = nil, html_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="url_for(options = {}, *parameters_for_method_reference)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	
+	<!-- ActionController::Base -->
+	<function pattern="controller_class_name()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="controller_name()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="controller_path()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="hidden_actions()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="hide_action(*names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="process_cgi(cgi = CGI.new, session_options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="process_test(request)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="uses_component_template_root()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="controller_class_name()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="controller_name()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="url_for(options = {}, *parameters_for_method_reference)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="default_url_options(options)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="redirect_to(options = {}, *parameters_for_method_reference)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render(options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render(:action => &quot;name&quot;)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render(:action => &quot;name&quot;, :layout => false)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render(:action => &quot;name&quot;, :layout => &quot;name&quot;)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render(:partial => &quot;name&quot;)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render(:partial => &quot;name&quot;, :locals => { :name => &quot;value&quot; })" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render(:partial => &quot;name&quot;, :collection => @col)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render(:partial => &quot;name&quot;, :collection => @col, :spacer_template => "name")" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render_to_string(options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="reset_session(" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Components -->
+	<function pattern="render_component(options)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render_component(options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="render_component_as_string(options)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Flash -->
+	<function pattern="flash(" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="keep_flash(" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Flash::FlashHash -->
+	<function pattern="discard(k=nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="keep(k=nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="now()" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Helpers::ClassMethods -->
+	<function pattern="helper(*args, &block)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="helper_attr(*attrs)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="helper_method(*methods)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Layout::ClassMethods -->
+	<function pattern="layout(template_name, conditions = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Pagination::ClassMethods -->
+	<function pattern="paginate(collection_id, options={})" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Pagination::Paginator -->
+	<function pattern="new(controller, item_count, items_per_page, current_page=1)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="[](number)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="current()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="current_page()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="current_page=(page)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="each() {|self[n+1]| ...}" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="first()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="first_page()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="has_page_number?(number)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="last()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="last_page()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="length()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="page_count()" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Pagination::Paginator::Page -->
+	<function pattern="new(paginator, number)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="<=>(page)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="==(page)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="first?()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="first_item()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="last?()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="last_item()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="next()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="offset()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="previous()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="to_sql()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="window(padding=2)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Pagination::Paginator::Window -->
+	<function pattern="new(page, padding=2)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="padding=(padding)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="pages()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="to_a()" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActionController::Streaming -->
+	<function pattern="send_data(data, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="send_file(path, options = {})" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- Test::Unit::Assertions -->
+	<function pattern="assert_generates(expected_path, options, defaults={}, extras = {}, message=nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="assert_no_tag(opts)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="assert_recognizes(expected_options, path, extras={}, message=nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="assert_redirected_to(options = {}, message=nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="assert_response(type, message = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="assert_routing(path, options, defaults={}, extras={}, message=nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="assert_tag(opts)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="assert_template(expected = nil, message=nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActiveRecord::Base -->
+	<function pattern="===(object)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="attr_accessible(*attributes)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="attr_protected(*attributes)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="benchmark(title) {|| ...}" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="column_methods_hash()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="column_names()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="columns()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="columns_hash()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="connected?()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="connection()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="connection=(spec)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="connection=(spec)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="content_columns()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="count(conditions = nil, joins = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="count_by_sql(sql)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="create(attributes = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="decrement_counter(counter_name, id)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="delete(id)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="delete_all(conditions = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="destroy(id)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="destroy_all(conditions = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="establish_connection(spec = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="exists?(id)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="find(*args)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="find_by_sql(sql)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="increment_counter(counter_name, id)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="inheritance_column()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="new(attributes = nil) {|self if block_given?| ...}" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="primary_key()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="remove_connection(klass=self)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="reset_column_information()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="serialize(attr_name, class_name = Object)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="serialized_attributes()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="set_inheritance_column( value=nil, &block )" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="set_primary_key( value=nil, &block )" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="set_table_name( value=nil, &block )" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="silence() {|| ...}" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="table_name()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="update(id, attributes)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="update_all(updates, conditions = nil)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="==(comparison_object)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="[](attr_name)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="[]=(attr_name, value)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="attribute_names()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="attribute_present?(attribute)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="attributes()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="attributes=(attributes)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="attributes_before_type_cast()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="attributes_with_quotes_pre_oci(include_primary_key = true)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="clone()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="column_for_attribute(name)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="connection()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="decrement(attribute)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="decrement!(attribute)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="destroy()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="eql?(comparison_object)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="freeze()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="frozen?()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="hash()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="id()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="id=(value)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="increment(attribute)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="increment!(attribute)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="new_record?()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="reload()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="respond_to?(method, include_priv = false)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="save()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="to_param()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="toggle(attribute)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="toggle!(attribute)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="update_attribute(name, value)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="update_attributes(attributes)" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActiveRecord::Callbacks -->
+	<function pattern="after_create()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="after_destroy()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="after_save()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="after_update()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="after_validation()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="after_validation_on_create()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="after_validation_on_update()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="before_create()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="before_destroy()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="before_save()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="before_update()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="before_validation()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="before_validation_on_create()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="before_validation_on_update()" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActiveRecord::Validations -->
+	<function pattern="errors()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="save!()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="save_with_validation(perform_validation = true)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="update_attribute_with_validation_skipping(name, value)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="valid?()" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validate(" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validate_on_create(" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validate_on_update(" doctypes="Ruby,Rails" caseSensitive="false" />
+	
+	<!-- ActiveRecord::Validations::ClassMethods -->
+	<function pattern="condition_block?(condition)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="evaluate_condition(condition, record)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validate(*methods, &block)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validate_on_create(*methods, &block)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validate_on_update(*methods, &block)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_acceptance_of(*attr_names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_associated(*attr_names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_confirmation_of(*attr_names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_each(*attrs) {|record, attr, value| ...}" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_exclusion_of(*attr_names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_format_of(*attr_names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_inclusion_of(*attr_names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_length_of(*attrs)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_numericality_of(*attr_names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_presence_of(*attr_names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_size_of(*attrs)" doctypes="Ruby,Rails" caseSensitive="false" />
+	<function pattern="validates_uniqueness_of(*attr_names)" doctypes="Ruby,Rails" caseSensitive="false" />
+	  
+</menugroup>

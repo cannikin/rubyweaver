@@ -1,0 +1,65 @@
+<macromedia-extension name="Rubyweaver" version="1.5.0" requires-restart="true" type="suite">
+	<author name="Rob Cameron" />
+	<products>
+		<product name="Dreamweaver" version="7" primary="true" />
+	</products>
+	<description>
+		<![CDATA[This extension adds Ruby and Rails file support and code coloring.]]>
+	</description>
+	<ui-access>
+		<![CDATA[When creating a new file via File > New..., you will see that Ruby is available as a file type in the "Text" grouping and Rails under the "Basic Page" grouping. YML and SQL are also available in the "Other" group. To view and make changes to color coding, go to Edit > Preferences > Code Coloring and select Ruby or Rails from the list, then click the "Edit Scheme" button. This
+				new version has basic code hinting, thanks to BDC Software Inc. for the hinting file (available at: http://www.bdcsoftware.com/dev_rubyonrails_dreamweaver_codehints.php)  These code hints depend on typing the full function name and an opening parenthesis before they'll kick in and show options. Ideally, as soon as you begin typing Dreamweaver would show a list of everything matching what you've typed so far. Still working on this.
+				
+				To get the proper HTML coloring to show up in Rails files you need to go to  Edit > Preferences > Code Format.  Click on the Tag Library Editor link, then click on the HTML Folder at the top of the tree.  Below turn on the checkbox for Rails.
+				
+				Please send comments to:
+				
+				rob@ridingtheclutch.com
+				http://www.ridingtheclutch.com]]>
+	</ui-access>
+	<files>
+		<file source="CodeColoring/Ruby.xml" destination="$dreamweaver/Configuration/CodeColoring/Ruby.xml" />
+		<file source="CodeColoring/RubyColors.xml" destination="$dreamweaver/Configuration/CodeColoring/RubyColors.xml" />
+		<file source="DocumentTypes/NewDocuments/default_ruby.rb" destination="$dreamweaver/Configuration/DocumentTypes/NewDocuments/default_ruby.rb" />
+		<file source="DocumentTypes/NewDocuments/default_rails.rhtml" destination="$dreamweaver/Configuration/DocumentTypes/NewDocuments/default_rails.rhtml" />
+		<file source="DocumentTypes/NewDocuments/default_yaml.yml" destination="$dreamweaver/Configuration/DocumentTypes/NewDocuments/default_yaml.yml" />
+		<file source="Strings/RubyDocumentTypes.xml" destination="$dreamweaver/Strings/RubyDocumentTypes.xml" />
+		<file source="CodeHints/RubyCodeHints.xml" destination="$dreamweaver/Configuration/CodeHints/RubyCodeHints.xml" />
+	</files>
+	<configuration-changes>
+		<extensions-changes>
+			<extension-insert extension="HTM,HTML,SHTM,SHTML,HTA,HTC,XHTML,STM,SSI,JS,AS,ASC,ASR,XML,XSL,XSD,DTD,XSLT,RSS,RDF,LBI,DWT,ASP,ASA,ASPX,ASCX,ASMX,CONFIG,CS,CSS,CFM,CFML,CFC,TLD,TXT,PHP,PHP3,PHP4,PHP5,TPL,LASSO,JSP,JSF,VB,VBS,VTM,VTML,INC,JAVA,EDML,WML,RB,RHTML,YML,SQL" description="All Documents" />
+			<extension-insert extension="RB,RHTML" description="Ruby and Rails files" />
+			<extension-insert extension="YML" description="YAML files" />
+			<extension-insert extension="SQL" description="SQL script files" />
+		</extensions-changes>
+		<ftp-extension-map-changes>
+			<ftp-extension-insert extension="RB" mac-creator="????" mac-file-type="????" type="ASCII" />
+			<ftp-extension-insert extension="RHTML" mac-creator="????" mac-file-type="????" type="ASCII" />
+			<ftp-extension-insert extension="YML" mac-creator="????" mac-file-type="????" type="ASCII" />
+			<ftp-extension-insert extension="SQL" mac-creator="????" mac-file-type="????" type="ASCII" />
+		</ftp-extension-map-changes>
+		<documenttype-changes>
+			<documenttype-insert>
+				<documenttype id="Ruby" internaltype="Text" winfileextension="rb" macfileextension="rb" file="default_ruby.rb" writebyteordermark="false">
+					<title><![CDATA[Ruby]]></title>
+					<description><![CDATA[Ruby Files]]></description>
+					<dtdcontext>html</dtdcontext>
+				</documenttype> 
+				<documenttype id="Rails" internaltype="Dynamic" winfileextension="rhtml" macfileextension="rhtml" file="default_rails.rhtml" writebyteordermark="false">
+					<title><![CDATA[Rails]]></title>
+					<description><![CDATA[Rails Files]]></description>
+					<dtdcontext>html</dtdcontext>
+				</documenttype> 
+				<documenttype id="YML" internaltype="Text" winfileextension="yml" macfileextension="yml" file="default_yaml.yml" writebyteordermark="false">
+					<title><![CDATA[YML]]></title>
+					<description><![CDATA[YAML Files (YAML Ain't a Markup Language)]]></description>
+				</documenttype> 
+				<documenttype id="SQL" internaltype="Text" winfileextension="sql" macfileextension="sql" file="default_sql.sql" writebyteordermark="false">
+					<title><![CDATA[SQL]]></title>
+					<description><![CDATA[SQL Script Files]]></description>
+				</documenttype> 
+			</documenttype-insert>
+		</documenttype-changes>
+	</configuration-changes>
+</macromedia-extension>

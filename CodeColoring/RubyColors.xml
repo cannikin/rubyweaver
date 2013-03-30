@@ -1,0 +1,69 @@
+<codeColors>
+	<colorGroup doctypes="Rails">
+		<tagColor id="CodeColor_CFScriptTag" text="#990033" />
+		<syntaxColor id="CodeColor_CSSImport" text="#009999" bold="true" />
+		<syntaxColor id="CodeColor_CSSMedia" text="#990000" bold="true" />
+		<syntaxColor id="CodeColor_CSSComment" text="#999999" />
+		<syntaxColor id="CodeColor_CssKeywordImportant" text="#FF0000" bold="true" />
+		<syntaxColor id="CodeColor_CSSProperty" text="#000099" />
+		<syntaxColor id="CodeColor_CSSSelector" text="#FF00FF" />
+		<syntaxColor id="CodeColor_CSSString" text="#006600" />
+		<syntaxColor id="CodeColor_CSSValue" text="#0000FF" />
+		<syntaxColor id="CodeColor_DateText" text="#000000" bgcolor="#FFFFCC" />
+		<tagColor id="CodeColor_HTMLAnchor" text="#006600" />
+		<syntaxColor id="CodeColor_HTMLString" text="#0000FF" />
+		<syntaxColor id="CodeColor_HTMLComment" text="#999999" />
+		<tagColor id="CodeColor_HTMLForm" text="#FF9900" />
+		<tagColor id="CodeColor_HTMLImage" text="#990099" />
+		<syntaxColor id="CodeColor_HTMLNumber" text="#0000FF" />
+		<tagColor id="CodeColor_HTMLObject" text="#990000" />
+		<syntaxColor id="CodeColor_HTMLTag" text="#000099" />
+		<tagColor id="CodeColor_HTMLScript" text="#990000" />
+		<syntaxColor id="CodeColor_HTMLEntity" text="#000000" bold="true" />
+		<tagColor id="CodeColor_HTMLStyle" text="#990099" />
+		<tagColor id="CodeColor_HTMLTable" text="#009999" />
+		<syntaxColor id="CodeColor_HTMLText" text="#000000" />
+		<syntaxColor id="CodeColor_JavascriptBracket" text="#000099" bold="true" />
+		<syntaxColor id="CodeColor_JavascriptClient" text="#990099" />
+		<syntaxColor id="CodeColor_JavascriptComment" text="#999999" />
+		<syntaxColor id="CodeColor_JavaScriptDefaultText" text="#000000" />
+		<syntaxColor id="CodeColor_JavascriptFunction" text="#000000" bold="true" />
+		<syntaxColor id="CodeColor_JavascriptIdentifier" text="#000000" />
+		<syntaxColor id="CodeColor_JavascriptNative" text="#009999" />
+		<syntaxColor id="CodeColor_JavascriptNumber" text="#FF0000" />
+		<syntaxColor id="CodeColor_JavascriptOperator" text="#0000FF" />
+		<syntaxColor id="CodeColor_JavascriptRegexp" text="#006600" />
+		<syntaxColor id="CodeColor_JavascriptReserved" text="#000099" bold="true" />
+		<syntaxColor id="CodeColor_JavascriptString" text="#0000FF" />
+		<syntaxColor id="CodeColor_LibraryText" text="#000000" bgcolor="#FFFFCC" />
+		<syntaxColor id="CodeColor_RailsBlock" text="#990000" bold="true" />
+		<syntaxColor id="CodeColor_RailsBracket" text="#000099" />
+		<syntaxColor id="CodeColor_RailsComment" text="#999999" />
+		<syntaxColor id="CodeColor_RailsConstant" text="#0000FF" />
+		<syntaxColor id="CodeColor_RailsDefaultText" text="#000000" />
+		<syntaxColor id="CodeColor_RailsFunction" text="#0000FF" />
+		<syntaxColor id="CodeColor_RailsFunctionsKeywords" text="#0000FF" />
+		<syntaxColor id="CodeColor_RailsIdentifier" text="#000000" />
+		<syntaxColor id="CodeColor_RailsModules" text="#0000FF" />
+		<syntaxColor id="CodeColor_RailsNumber" text="#FF0000" />
+		<syntaxColor id="CodeColor_RailsOperator" text="#0000FF" />
+		<syntaxColor id="CodeColor_RailsReserved" text="#0000FF" />
+		<syntaxColor id="CodeColor_RailsString" text="#006600" />
+		<syntaxColor id="CodeColor_RailsVariables" text="#0000FF" />
+	</colorGroup>
+	<colorGroup doctypes="Ruby">
+		<syntaxColor id="CodeColor_RubyBracket" text="#000099" />
+		<syntaxColor id="CodeColor_RubyComment" text="#333333" bgcolor="#FFFFCC" />
+		<syntaxColor id="CodeColor_RubyConstant" text="#0000FF" />
+		<syntaxColor id="CodeColor_DefaultText" text="#000000" />
+		<syntaxColor id="CodeColor_RubyFunction" text="#0000FF" />
+		<syntaxColor id="CodeColor_RubyFunctionsKeywords" text="#0000FF" />
+		<syntaxColor id="CodeColor_RubyIdentifier" text="#000000" />
+		<syntaxColor id="CodeColor_RubyModules" text="#0000FF" />
+		<syntaxColor id="CodeColor_RubyNumber" text="#FF0000" />
+		<syntaxColor id="CodeColor_RubyOperator" text="#0000FF" />
+		<syntaxColor id="CodeColor_RubyReserved" text="#0000FF" />
+		<syntaxColor id="CodeColor_RubyString" text="#006600" />
+		<syntaxColor id="CodeColor_RubyVariables" text="#0000FF" />
+	</colorGroup>
+</codeColors>
