@@ -14,10 +14,10 @@ Features
 
 Gives full Ruby and Rails functionality to Dreamweaver, including the following:
 
-1. Inserts a "Rails" object with tools to automatically insert VTL code into your document (appears in "Insert" toolbar in MX 2004 and up). 
-2. Adds .rb, .rhtml, .erb, .rxml, .rjs, .yml, and .sql extensions in Dreamweaver and associates those files with Dreamweaver for editing. 
-3. Adds Rails RHTML, Rails ERB, Ruby, YML, and SQL as a new document types in Dreamweaver. Also adds default pages which will open as the new document when these types are selected.
-4. Supports color coding, tag hints, etc.
+* Inserts a "Rails" object with tools to automatically insert VTL code into your document (appears in "Insert" toolbar in MX 2004 and up). 
+* Adds .rb, .rhtml, .erb, .rxml, .rjs, .yml, and .sql extensions in Dreamweaver and associates those files with Dreamweaver for editing. 
+* Adds Rails RHTML, Rails ERB, Ruby, YML, and SQL as a new document types in Dreamweaver. Also adds default pages which will open as the new document when these types are selected.
+* Supports color coding, tag hints, etc.
 
 Version History
 ===============
