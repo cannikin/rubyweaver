@@ -14,10 +14,10 @@ Features
 
 Gives full Ruby and Rails functionality to Dreamweaver, including the following:
 
-# Inserts a "Rails" object with tools to automatically insert VTL code into your document (appears in "Insert" toolbar in MX 2004 and up). 
-# Adds .rb, .rhtml, .erb, .rxml, .rjs, .yml, and .sql extensions in Dreamweaver and associates those files with Dreamweaver for editing. 
-# Adds Rails RHTML, Rails ERB, Ruby, YML, and SQL as a new document types in Dreamweaver. Also adds default pages which will open as the new document when these types are selected.
-# Supports color coding, tag hints, etc.
+1. Inserts a "Rails" object with tools to automatically insert VTL code into your document (appears in "Insert" toolbar in MX 2004 and up). 
+2. Adds .rb, .rhtml, .erb, .rxml, .rjs, .yml, and .sql extensions in Dreamweaver and associates those files with Dreamweaver for editing. 
+3. Adds Rails RHTML, Rails ERB, Ruby, YML, and SQL as a new document types in Dreamweaver. Also adds default pages which will open as the new document when these types are selected.
+4. Supports color coding, tag hints, etc.
 
 Version History
 ===============
@@ -57,8 +57,11 @@ Latest version 2.3.3: released January 14, 2008
       <td class="nowrap">Version 1.5.0</td>
       <td>Latest version developed by Rob Cameron with .rb, .rhtml, .yml, and .sql support. Also came with color coding and tag hints. </td>
     </tr>
-  </table>Known Issues
+  </table>
+
+
+Known Issues
 ============
 
-# To get the proper HTML coloring to show up in Rails files you need to go to Edit > Preferences > Code Hints. Click on the Tag Library Editor link, then click on the HTML Folder at the top of the tree. Below turn on the checkbox for Rails RHTML, Rails ERB, and Ruby.
-# Do not add file extensions to the Edit > Preferences... > File Types / Editors > Open in code view list. This will cause the Split and Design views to stop working for these file types.
+* To get the proper HTML coloring to show up in Rails files you need to go to Edit > Preferences > Code Hints. Click on the Tag Library Editor link, then click on the HTML Folder at the top of the tree. Below turn on the checkbox for Rails RHTML, Rails ERB, and Ruby.
+* Do not add file extensions to the Edit > Preferences... > File Types / Editors > Open in code view list. This will cause the Split and Design views to stop working for these file types.
