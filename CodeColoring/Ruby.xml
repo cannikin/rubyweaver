@@ -1,5 +1,5 @@
 <codeColoring>
-	<scheme name="HTML" id="HTML" doctypes="ASP.NET_VB,ASP.NET_CSharp,ASP-JS,ASP-VB,ColdFusion,CFC,HTML,JSP,PHP_MySQL,LibraryItem,WML,XSLT,Rails" priority="50">
+	<scheme name="HTML" id="HTML" doctypes="ASP.NET_VB,ASP.NET_CSharp,ASP-JS,ASP-VB,ColdFusion,CFC,HTML,JSP,PHP_MySQL,LibraryItem,WML,XSLT,Rails_RHTML,Rails_ERB" priority="50">
 		<ignoreCase>Yes</ignoreCase>
 		<ignoreTags>No</ignoreTags>
 		<defaultText name="Text" id="CodeColor_HTMLText" />
@@ -19,7 +19,7 @@
 		<cssProperty id="CodeColor_CSSProperty" />
 		<cssValue id="CodeColor_CSSValue" />
 		
-		<sampleText doctypes="Rails">
+		<sampleText doctypes="Rails_RHTML">
 <![CDATA[<% 3.downto(1) do |each| %>
 <%= each %>...<br />
 <% end %>
@@ -40,7 +40,7 @@ Text
 	</scheme>
 
 
-	<scheme name="Ruby" id="Ruby_Color" priority="10" doctypes="Ruby,Rails">
+	<scheme name="Ruby" id="Ruby_Color" priority="10" doctypes="Ruby,Rails_RHTML,Rails_ERB,Rails_XML">
 		<ignoreCase>No</ignoreCase>
 		<ignoreTags>Yes</ignoreTags>
 		<defaultText name="Default Text" id="CodeColor_DefaultText" />
@@ -247,17 +247,17 @@ end
 	</scheme>
 
 
-	<scheme name="Rails" id="Rails_Color" priority="20" doctypes="Rails,Ruby">
+	<scheme name="Rails" id="Rails_Color" priority="20" doctypes="Rails_RHTML,Rails_ERB,Ruby">
 		<ignoreCase>No</ignoreCase>
 		<ignoreTags>Yes</ignoreTags>
 		<defaultText name="Default Text" id="CodeColor_RailsDefaultText" />
-		<blockStart name="Block Delimiter" id="CodeColor_RailsBlock" doctypes="Rails,Ruby" scheme="customText"><![CDATA[<%\s]]></blockStart>
+		<blockStart name="Block Delimiter" id="CodeColor_RailsBlock" doctypes="Rails_RHTML,Rails_ERB,Ruby" scheme="customText"><![CDATA[<%\s]]></blockStart>
 		<blockEnd><![CDATA[%>]]></blockEnd>
-		<blockStart doctypes="Rails,Ruby" scheme="customText"><![CDATA[<%]]></blockStart>
+		<blockStart doctypes="Rails_RHTML,Rails_ERB,Ruby" scheme="customText"><![CDATA[<%]]></blockStart>
 		<blockEnd><![CDATA[%>]]></blockEnd>
-		<blockStart doctypes="Rails,Ruby" scheme="customText"><![CDATA[<%]]></blockStart>
+		<blockStart doctypes="Rails_RHTML,Rails_ERB,Ruby" scheme="customText"><![CDATA[<%]]></blockStart>
 		<blockEnd><![CDATA[-%>]]></blockEnd>
-		<blockStart doctypes="Rails,Ruby" scheme="customText"><![CDATA[<%=]]></blockStart>
+		<blockStart doctypes="Rails_RHTML,Rails_ERB,Ruby" scheme="customText"><![CDATA[<%=]]></blockStart>
 		<blockEnd><![CDATA[%>]]></blockEnd>
 		
 		<endOfLineComment name="Comment" id="CodeColor_RailsComment"><![CDATA[#]]></endOfLineComment>
