@@ -1,0 +1,36 @@
+<!-- MENU-LOCATION=NONE -->
+<html>
+<head>
+<title>Else If</title>
+
+<script language="javascript">
+
+//---------------     API FUNCTIONS    ---------------
+
+function isDOMRequired() { 
+	// Return false, indicating that this object is available in code view.
+	return false;
+}
+
+function objectTag() {
+	// Manually insert tag, and then put IP inside it.
+	var dom = dw.getDocumentDOM();
+	var docType = dom.documentType;
+	var before,after;
+	before = '<% elsif ';
+	after  = ' %>';
+		
+	dom.source.wrapSelection(before,after);
+
+  // Just return -- don't do anything else.
+  return;
+}
+
+</script>
+	
+</head>
+
+<body>
+</body>
+
+</html>

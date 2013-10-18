@@ -1,64 +1,172 @@
-<macromedia-extension name="Rubyweaver" version="1.5.0" requires-restart="true" type="suite">
-	<author name="Rob Cameron" />
+<macromedia-extension
+	 name="Rubyweaver"
+	 version="2.3.3"
+	 type="suite"
+	 requires-restart="true">
+
+	<author name="Jason Gill" />
+
 	<products>
-		<product name="Dreamweaver" version="7" primary="true" />
+		<product name="Dreamweaver" version="6" primary="true" />
 	</products>
+
 	<description>
-		<![CDATA[This extension adds Ruby and Rails file support and code coloring.]]>
+	<![CDATA[
+	See http://rubyweaver.gilluminate.com for more information on this extension.<br>
+<br>
+This extension adds Ruby and Rails file support, code coloring, code hinting, and a "Rails" object with buttons to automatically insert Ruby code into your rhtml.<br>
+<br>
+This version is a branch from Rob Cameron's Rubyweaver that once resided on http://www.ridingtheclutch.com but mysteriously dissapeared along with Rob's entire Blog. The main enhancement I've made is adding the Insert toolbar objects.<br>
+<br>
+Rob gave thanks to BDC Software Inc. for the hinting file (available at: http://www.bdcsoftware.com/dev_rubyonrails_dreamweaver_codehints.php) These code hints depend on typing the full function name and an opening parenthesis before they'll kick in and show options. Ideally, as soon as you begin typing Dreamweaver would show a list of everything matching what you've typed so far.
+	]]>
 	</description>
+
 	<ui-access>
-		<![CDATA[When creating a new file via File > New..., you will see that Ruby is available as a file type in the "Text" grouping and Rails under the "Basic Page" grouping. YML and SQL are also available in the "Other" group. To view and make changes to color coding, go to Edit > Preferences > Code Coloring and select Ruby or Rails from the list, then click the "Edit Scheme" button. This
-				new version has basic code hinting, thanks to BDC Software Inc. for the hinting file (available at: http://www.bdcsoftware.com/dev_rubyonrails_dreamweaver_codehints.php)  These code hints depend on typing the full function name and an opening parenthesis before they'll kick in and show options. Ideally, as soon as you begin typing Dreamweaver would show a list of everything matching what you've typed so far. Still working on this.
-				
-				To get the proper HTML coloring to show up in Rails files you need to go to  Edit > Preferences > Code Format.  Click on the Tag Library Editor link, then click on the HTML Folder at the top of the tree.  Below turn on the checkbox for Rails.
-				
-				Please send comments to:
-				
-				rob@ridingtheclutch.com
-				http://www.ridingtheclutch.com]]>
+	<![CDATA[
+	To get the proper HTML coloring to show up in Rails files you need to go to Edit > Preferences > Code Format. Click on the Tag Library Editor link, then click on the HTML Folder at the top of the tree. Below turn on the checkbox for Rails.<br>
+<br>
+To open a new select File > New..., you will see that Rails RHTML, Rails ERB, and Ruby are available page types under the "Basic Page" grouping. YML and SQL are also available in the "Other" group.<br>
+<br>
+Access objects via 'Rails' option inside the 'Insert' toolbar.<br>
+<br>
+To view and make changes to color coding, go to Edit > Preferences > Code Coloring and select Ruby, Rails RHTML or Rails ERB from the list, then click the "Edit Scheme" button.
+	]]>
 	</ui-access>
+
+	<license-agreement>
+	<![CDATA[
+	Copyright (c) 2008 Jason Gill, http://rubyweaver.gilluminate.com<br>
+Distributed under the MIT licence (below)<br>
+<br>
+Except as contained in this notice, the name(s) of the above copyright holders shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization.<br>
+<br>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br>
+<br>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br>
+<br>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	]]>
+	</license-agreement>
+
 	<files>
 		<file source="CodeColoring/Ruby.xml" destination="$dreamweaver/Configuration/CodeColoring/Ruby.xml" />
 		<file source="CodeColoring/RubyColors.xml" destination="$dreamweaver/Configuration/CodeColoring/RubyColors.xml" />
 		<file source="DocumentTypes/NewDocuments/default_ruby.rb" destination="$dreamweaver/Configuration/DocumentTypes/NewDocuments/default_ruby.rb" />
 		<file source="DocumentTypes/NewDocuments/default_rails.rhtml" destination="$dreamweaver/Configuration/DocumentTypes/NewDocuments/default_rails.rhtml" />
+		<file source="DocumentTypes/NewDocuments/default_rjs.rjs" destination="$dreamweaver/Configuration/DocumentTypes/NewDocuments/default_rjs.rjs" />
+		<file source="DocumentTypes/NewDocuments/default_rxml.rxml" destination="$dreamweaver/Configuration/DocumentTypes/NewDocuments/default_rxml.rxml" />
+		<file source="DocumentTypes/NewDocuments/default_sql.sql" destination="$dreamweaver/Configuration/DocumentTypes/NewDocuments/default_sql.sql" />
 		<file source="DocumentTypes/NewDocuments/default_yaml.yml" destination="$dreamweaver/Configuration/DocumentTypes/NewDocuments/default_yaml.yml" />
 		<file source="Strings/RubyDocumentTypes.xml" destination="$dreamweaver/Strings/RubyDocumentTypes.xml" />
 		<file source="CodeHints/RubyCodeHints.xml" destination="$dreamweaver/Configuration/CodeHints/RubyCodeHints.xml" />
+		<file source="Objects/Ruby/RubyElse.gif" destination="$dreamweaver/Configuration/Objects/Ruby/RubyElse.gif" />
+		<file source="Objects/Ruby/RubyElse.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyElse.htm" />
+		<file source="Objects/Ruby/RubyElseIf.gif" destination="$dreamweaver/Configuration/Objects/Ruby/RubyElseIf.gif" />
+		<file source="Objects/Ruby/RubyElseIf.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyElseIf.htm" />
+		<file source="Objects/Ruby/RubyUnless.gif" destination="$dreamweaver/Configuration/Objects/Ruby/RubyUnless.gif" />
+		<file source="Objects/Ruby/RubyUnless.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyUnless.htm" />
+		<file source="Objects/Ruby/RubyEnd.gif" destination="$dreamweaver/Configuration/Objects/Ruby/RubyEnd.gif" />
+		<file source="Objects/Ruby/RubyEnd.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyEnd.htm" />
+		<file source="Objects/Ruby/RubyIf.gif" destination="$dreamweaver/Configuration/Objects/Ruby/RubyIf.gif" />
+		<file source="Objects/Ruby/RubyIf.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyIf.htm" />
+		<file source="Objects/Ruby/RubyOutput.gif" destination="$dreamweaver/Configuration/Objects/Ruby/RubyOutput.gif" />
+		<file source="Objects/Ruby/RubyOutput.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyOutput.htm" />
+		<file source="Objects/Ruby/RubyTag.gif" destination="$dreamweaver/Configuration/Objects/Ruby/RubyTag.gif" />
+		<file source="Objects/Ruby/RubyTag.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyTag.htm" />
+		<file source="Objects/Ruby/RubyJS.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyJS.htm" />
+		<file source="Objects/Ruby/RubyCSS.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyCSS.htm" />
+		<file source="Objects/Ruby/RubyImageTag.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyImageTag.htm" />
+		<file source="Objects/Ruby/RubyLinkTo.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyLinkTo.htm" />
+		<file source="Objects/Ruby/RubyUrlFor.htm" destination="$dreamweaver/Configuration/Objects/Ruby/RubyUrlFor.htm" />
 	</files>
+
 	<configuration-changes>
+		<insertbar-changes>
+			<insertbar-insert>
+				<category folder="Ruby" id="DW_Insertbar_Rails" name="Rails">
+					<button codeOnly="TRUE" file="Ruby\RubyTag.htm" id="DW_Ruby_CodeBlock" image="Ruby\RubyTag.gif" name="Code Block" />
+					<button codeOnly="TRUE" file="Ruby\RubyOutput.htm" id="DW_Ruby_Output" image="Ruby\RubyOutput.gif" name="Output" />
+					<separator id="Ruby_seperator1" />
+					<button codeOnly="TRUE" file="Ruby\RubyIf.htm" id="DW_Ruby_If" image="Ruby\RubyIf.gif" name="If" />
+					<button codeOnly="TRUE" file="Ruby\RubyUnless.htm" id="DW_Ruby_Unless" image="Ruby\RubyUnless.gif" name="Unless" />
+					<button codeOnly="TRUE" file="Ruby\RubyElse.htm" id="DW_Ruby_Else" image="Ruby\RubyElse.gif" name="Else" />
+					<button codeOnly="TRUE" file="Ruby\RubyElseIf.htm" id="DW_Ruby_ASPElseIf" image="Ruby\RubyElseIf.gif" name="Else If" />
+					<button codeOnly="TRUE" file="Ruby\RubyEnd.htm" id="DW_Ruby_End" image="Ruby\RubyEnd.gif" name="End" />
+					<separator id="Ruby_seperator2" />
+					<menubutton id="DW_Ruby_Tags" image="Script\Script.gif" name="Ruby Tags">
+						<button file="Ruby\RubyImageTag.htm" id="DW_Ruby_Image" image="Common\Image.png" name="Image Tag" />
+						<button file="Ruby\RubyLinkTo.htm" id="DW_Ruby_Link" image="Common\Hyperlink.png" name="Link To" />
+						<button file="Ruby\RubyUrlFor.htm" id="DW_Ruby_URL" image="Head\Link.gif" name="URL For" />
+						<button file="Ruby\RubyJS.htm" id="DW_Ruby_JS" image="Script\Script.gif" name="JavaScript Include Tag" />
+						<button file="Ruby\RubyCSS.htm" id="DW_Ruby_CSS" image="Layout\Div.png" name="Stylesheet Link Tag" />
+					</menubutton>
+				</category>
+			</insertbar-insert>
+		</insertbar-changes>
 		<extensions-changes>
-			<extension-insert extension="HTM,HTML,SHTM,SHTML,HTA,HTC,XHTML,STM,SSI,JS,AS,ASC,ASR,XML,XSL,XSD,DTD,XSLT,RSS,RDF,LBI,DWT,ASP,ASA,ASPX,ASCX,ASMX,CONFIG,CS,CSS,CFM,CFML,CFC,TLD,TXT,PHP,PHP3,PHP4,PHP5,TPL,LASSO,JSP,JSF,VB,VBS,VTM,VTML,INC,JAVA,EDML,WML,RB,RHTML,YML,SQL" description="All Documents" />
-			<extension-insert extension="RB,RHTML" description="Ruby and Rails files" />
+			<extension-insert extension="RB,RHTML,ERB,RXML,RJS" description="Ruby on Rails files" />
 			<extension-insert extension="YML" description="YAML files" />
 			<extension-insert extension="SQL" description="SQL script files" />
 		</extensions-changes>
-		<ftp-extension-map-changes>
-			<ftp-extension-insert extension="RB" mac-creator="????" mac-file-type="????" type="ASCII" />
-			<ftp-extension-insert extension="RHTML" mac-creator="????" mac-file-type="????" type="ASCII" />
-			<ftp-extension-insert extension="YML" mac-creator="????" mac-file-type="????" type="ASCII" />
-			<ftp-extension-insert extension="SQL" mac-creator="????" mac-file-type="????" type="ASCII" />
-		</ftp-extension-map-changes>
 		<documenttype-changes>
 			<documenttype-insert>
-				<documenttype id="Ruby" internaltype="Text" winfileextension="rb" macfileextension="rb" file="default_ruby.rb" writebyteordermark="false">
-					<title><![CDATA[Ruby]]></title>
-					<description><![CDATA[Ruby Files]]></description>
-					<dtdcontext>html</dtdcontext>
-				</documenttype> 
-				<documenttype id="Rails" internaltype="Dynamic" winfileextension="rhtml" macfileextension="rhtml" file="default_rails.rhtml" writebyteordermark="false">
-					<title><![CDATA[Rails]]></title>
-					<description><![CDATA[Rails Files]]></description>
-					<dtdcontext>html</dtdcontext>
-				</documenttype> 
-				<documenttype id="YML" internaltype="Text" winfileextension="yml" macfileextension="yml" file="default_yaml.yml" writebyteordermark="false">
-					<title><![CDATA[YML]]></title>
-					<description><![CDATA[YAML Files (YAML Ain't a Markup Language)]]></description>
-				</documenttype> 
-				<documenttype id="SQL" internaltype="Text" winfileextension="sql" macfileextension="sql" file="default_sql.sql" writebyteordermark="false">
-					<title><![CDATA[SQL]]></title>
-					<description><![CDATA[SQL Script Files]]></description>
-				</documenttype> 
+				<documenttype file="default_rails.rhtml" id="Rails_RHTML" internaltype="Dynamic" macfileextension="rhtml" winfileextension="rhtml" writebyteordermark="false">
+					<TITLE>
+						<![CDATA[Rails RHTML]]>
+					</TITLE>
+					<description>
+						<![CDATA[Legacy Rails Files]]>
+					</description>
+				</documenttype>
+				<documenttype file="default_rails.rhtml.erb" id="Rails_ERB" internaltype="Dynamic" macfileextension="erb" winfileextension="erb" writebyteordermark="false">
+					<TITLE>
+						<![CDATA[Rails ERB]]>
+					</TITLE>
+					<description>
+						<![CDATA[Rails 2.0 Files]]>
+					</description>
+				</documenttype>
+				<documenttype file="default_ruby.rb" id="Ruby" internaltype="Dynamic" macfileextension="rb" winfileextension="rb" writebyteordermark="false">
+					<TITLE>
+						<![CDATA[Ruby]]>
+					</TITLE>
+					<description>
+						<![CDATA[Ruby Files]]>
+					</description>
+				</documenttype>
+				<documenttype file="default_rails.rjs" id="Rails_RJS" internaltype="Text" macfileextension="rjs" winfileextension="rjs" writebyteordermark="false">
+					<TITLE>
+						<![CDATA[Rails JavaScript]]>
+					</TITLE>
+					<description>
+						<![CDATA[Rails JavaScript Files]]>
+					</description>
+				</documenttype>
+				<documenttype file="default_rails.rxml" id="Rails_XML" internaltype="Text" macfileextension="rxml" winfileextension="rxml" writebyteordermark="false">
+					<TITLE>
+						<![CDATA[Rails XML]]>
+					</TITLE>
+					<description>
+						<![CDATA[Rails XML Files]]>
+					</description>
+				</documenttype>
+				<documenttype file="default_yaml.yml" id="YML" internaltype="Text" macfileextension="yml" winfileextension="yml" writebyteordermark="false">
+					<TITLE>
+						<![CDATA[YML]]>
+					</TITLE>
+					<description>
+						<![CDATA[YAML Files (YAML Ain't a Markup Language)]]>
+					</description>
+				</documenttype>
+				<documenttype file="default_sql.sql" id="SQL" internaltype="Text" macfileextension="sql" winfileextension="sql" writebyteordermark="false">
+					<TITLE>
+						<![CDATA[SQL]]>
+					</TITLE>
+					<description>
+						<![CDATA[SQL Script Files]]>
+					</description>
+				</documenttype>
 			</documenttype-insert>
 		</documenttype-changes>
 	</configuration-changes>

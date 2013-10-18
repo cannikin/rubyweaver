@@ -1,5 +1,5 @@
 <codeColors>
-	<colorGroup doctypes="Rails">
+	<colorGroup doctypes="Rails_RHTML,Rails_ERB">
 		<tagColor id="CodeColor_CFScriptTag" text="#990033" />
 		<syntaxColor id="CodeColor_CSSImport" text="#009999" bold="true" />
 		<syntaxColor id="CodeColor_CSSMedia" text="#990000" bold="true" />
@@ -51,7 +51,7 @@
 		<syntaxColor id="CodeColor_RailsString" text="#006600" />
 		<syntaxColor id="CodeColor_RailsVariables" text="#0000FF" />
 	</colorGroup>
-	<colorGroup doctypes="Ruby">
+	<colorGroup doctypes="Ruby,Rails_XML">
 		<syntaxColor id="CodeColor_RubyBracket" text="#000099" />
 		<syntaxColor id="CodeColor_RubyComment" text="#333333" bgcolor="#FFFFCC" />
 		<syntaxColor id="CodeColor_RubyConstant" text="#0000FF" />
