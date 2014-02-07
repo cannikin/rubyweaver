@@ -20,7 +20,7 @@ How to install on CS6
 * Verify you want to install an unsigned extension
 * Restart Dreamweaver and you're all set!
 
-I've also used this on CS4 with no problems, but I don't entirely remember the instalaltion process. I believe you can skip creating the zxp and just install it from the mxi file.
+I've also used this on CS4 with no problems, but I don't entirely remember the installation process. I believe you can skip creating the zxp and just install it from the mxi file.
 
 Features
 ========
