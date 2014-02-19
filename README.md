@@ -4,10 +4,23 @@ Rubyweaver
 Ruby syntax highlighting for Dreamweaver. I created this back in 2005/2006 
 so I could write Ruby/Rails code in Dreamweaver and get some syntax highlighting.
 
-It's been so long since I've used Dreamweaver that I have no idea how to actually
-install it anymore, but people are still using it so I'm providing the code here.
-If someone knows how to install it please issue me a pull request with updates
-to this README explaining how. Thanks!
+How to install on CS6
+==========
+
+* Download the zip folder from Git
+* Extract the ZIP folder on your desktop
+* Right click on Dreamweaver and "Run as administrator"
+* Select Help>Manage Extensions
+* In the Extensions panel select File>Package ZXP Extension
+* Select the rubyweaver.mxi in the rubyweaver-master folder
+* Save rubyweaver.zxp in the same folder
+* Click the Install Button in the Extensions panel
+* Select rubyweaver.zxp
+* Accept the License
+* Verify you want to install an unsigned extension
+* Restart Dreamweaver and you're all set!
+
+I've also used this on CS4 with no problems, but I don't entirely remember the installation process. I believe you can skip creating the zxp and just install it from the mxi file.
 
 Features
 ========
